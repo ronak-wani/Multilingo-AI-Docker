@@ -1,0 +1,43 @@
+<!DOCTYPE HTML>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- get rid of favicon error -->
+        <title>MultiLingo AI</title>
+        <link rel="icon" href="data:;base64,iVBORw0KGgo=">
+        <link rel="stylesheet" href="static/styles.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet">
+    </head>
+    <body class="outfit-font">
+            <h1>MULTILINGO AI</h1>
+            <div class="container">
+                <textarea id="textInput" placeholder="Ask your question"></textarea>
+                <div class="output" id="js-response-window">Result</div>
+            </div>
+            <div class="form-container">
+            <div class="form-group">
+            <p style="display:block">Select Model:</p>
+            <div style="display:flex; justify-content: center; align-items: center;">
+                <input type="checkbox" id="localModel" name="model" value="local">
+                <label for="localModel" style="margin-right: 25px" style="margin-left: 5px">Local Model</label>
+                <input type="checkbox" id="apiModel" name="model" value="api" style="margin-left: 25px">
+                <label for="apiModel" style="margin-left: 5px;">API Model</label>
+                <label for="language" style="display:flex; justify-content: center; align-items: center; margin-left: 50px; margin-right: 20px">Select Language:</label>
+                <select id="language" class="dropdown">
+                    <option value="english">English</option>
+                    <option value="spanish">Spanish</option>
+                    <option value="french">French</option>
+                    <option value="german">German</option>
+                    <option value="chinese">Chinese</option>
+                </select>
+            </div>
+                <input type="submit" style="background-color: #007BFF;" id="buttonInput" value="Send">
+        </div>
+    </div>
+        <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+        <script src="static/custom.js"></script>
+    </body>
+</html>
