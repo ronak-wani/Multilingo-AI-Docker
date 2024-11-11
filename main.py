@@ -1,3 +1,5 @@
+from prometheus_client import make_asgi_app, Histogram, start_http_server, Counter, Summary
+
 import nest_asyncio
 from starlette.responses import FileResponse
 from starlette.staticfiles import StaticFiles
@@ -15,6 +17,7 @@ from pydantic import BaseModel
 
 
 load_dotenv()
+
 
 class InputModel(BaseModel):
     question: str
@@ -35,6 +38,17 @@ app.add_middleware(
 )
 
 app.mount("/static", StaticFiles(directory="static"), name="static")
+
+metrics_app = make_asgi_app()
+app.mount("/metrics", metrics_app)
+
+request_counter = Counter('app_requests_total', 'Total number of requests')
+successful_requests = Counter('app_successful_requests_total', 'Total number of successful requests')
+failed_requests = Counter('app_failed_requests_total', 'Total number of failed requests')
+request_duration = Summary('app_request_duration_seconds', 'Time spent processing request')
+h = Histogram('request_latency_seconds', 'Request latency')
+h.observe(4.7)
+
 
 @app.get("/")
 async def root():
@@ -76,4 +90,4 @@ async def root(input: InputModel):
     return {"text": response.text}
 
 if __name__=="__main__":
-    uvicorn.run(app,host="localhost",port=8000)
+    uvicorn.run(app,host="localhost",port=8010)

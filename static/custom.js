@@ -34,7 +34,7 @@ async function backendResponse() {
     }
     if (modelChoice === "api") {
         console.log(JSON.stringify(obj.input))
-        await fetch("http://localhost:8000/api", {
+        await fetch("http://localhost:8010/api", {
             method: "POST",
             headers: {"Content-Type": "application/json"},
             body: JSON.stringify(obj.input),
@@ -53,7 +53,7 @@ async function backendResponse() {
             console.error('There was a problem with the fetch operation:', error);
         });
     } else {
-        await fetch("http://localhost:8000/chatbot/invoke/", {
+        await fetch("http://localhost:8010/chatbot/invoke/", {
             method: "POST",
             headers: {"Content-Type": "application/json"},
             body: JSON.stringify(obj),

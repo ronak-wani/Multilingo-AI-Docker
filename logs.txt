@@ -1,0 +1,25 @@
+
+     __          ___      .__   __.   _______      _______. _______ .______     ____    ____  _______
+    |  |        /   \     |  \ |  |  /  _____|    /       ||   ____||   _  \    \   \  /   / |   ____|
+    |  |       /  ^  \    |   \|  | |  |  __     |   (----`|  |__   |  |_)  |    \   \/   /  |  |__
+    |  |      /  /_\  \   |  . `  | |  | |_ |     \   \    |   __|  |      /      \      /   |   __|
+    |  `----./  _____  \  |  |\   | |  |__| | .----)   |   |  |____ |  |\  \----.  \    /    |  |____
+    |_______/__/     \__\ |__| \__|  \______| |_______/    |_______|| _| `._____|   \__/     |_______|
+    
+[1;32;40mLANGSERVE:[0m Playground for chain "/chatbot/" is live at:
+[1;32;40mLANGSERVE:[0m  │
+[1;32;40mLANGSERVE:[0m  └──> /chatbot/playground/
+[1;32;40mLANGSERVE:[0m
+[1;32;40mLANGSERVE:[0m See all available routes at /docs/
+INFO:     172.17.0.1:61526 - "GET / HTTP/1.1" 200 OK
+INFO:     172.17.0.1:61526 - "GET /static/custom.js HTTP/1.1" 304 Not Modified
+INFO:     172.17.0.1:64336 - "POST /api HTTP/1.1" 500 Internal Server Error
+INFO:     172.17.0.1:56184 - "GET /metrics HTTP/1.1" 307 Temporary Redirect
+INFO:     172.17.0.1:56184 - "GET /metrics/ HTTP/1.1" 200 OK
+INFO:     172.17.0.1:56184 - "GET /favicon.ico HTTP/1.1" 404 Not Found
+INFO:     172.17.0.1:63656 - "GET /static/custom.js HTTP/1.1" 304 Not Modified
+INFO:     172.17.0.1:56606 - "GET /docs HTTP/1.1" 200 OK
+INFO:     172.17.0.1:56606 - "GET /openapi.json HTTP/1.1" 200 OK
+INFO:     172.17.0.1:57292 - "POST /api HTTP/1.1" 500 Internal Server Error
+INFO:     172.17.0.1:64858 - "POST /chatbot/invoke/ HTTP/1.1" 307 Temporary Redirect
+INFO:     172.17.0.1:64858 - "POST /chatbot/invoke HTTP/1.1" 500 Internal Server Error

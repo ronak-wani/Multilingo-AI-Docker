@@ -1,0 +1,9 @@
+FROM grafana/grafana:latest
+
+USER root
+
+WORKDIR /grafana
+
+COPY . .
+
+EXPOSE 3000

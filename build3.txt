@@ -1,0 +1,41 @@
+#0 building with "desktop-linux" instance using docker driver
+
+#1 [internal] load build definition from Dockerfile3
+#1 transferring dockerfile: 248B done
+#1 DONE 0.0s
+
+#2 [auth] prom/prometheus:pull token for registry-1.docker.io
+#2 DONE 0.0s
+
+#3 [internal] load metadata for docker.io/prom/prometheus:latest
+#3 DONE 0.2s
+
+#4 [internal] load .dockerignore
+#4 transferring context: 302B done
+#4 DONE 0.0s
+
+#5 [internal] load build context
+#5 transferring context: 73B done
+#5 DONE 0.0s
+
+#6 [1/3] FROM docker.io/prom/prometheus:latest@sha256:2659f4c2ebb718e7695cb9b25ffa7d6be64db013daba13e05c875451cf51b0d3
+#6 resolve docker.io/prom/prometheus:latest@sha256:2659f4c2ebb718e7695cb9b25ffa7d6be64db013daba13e05c875451cf51b0d3 done
+#6 DONE 0.0s
+
+#7 [2/3] WORKDIR /etc/prometheus
+#7 CACHED
+
+#8 [3/3] COPY prometheus.yml /etc/prometheus/prometheus.yml
+#8 CACHED
+
+#9 exporting to image
+#9 exporting layers done
+#9 exporting manifest sha256:01a75443123b6d327df9eabc2dcec2cea3e4ba432db2d0c222126b98568e8711 done
+#9 exporting config sha256:11f3726ef27021d0f1fa60acc97641ca23c6d4c7e6bb6e50e5c9648df27b44d6 done
+#9 exporting attestation manifest sha256:af549f3af8b1b73958a8348e2ef5ff8b0bf2fde8d00bb18317a0aae3f172d064 done
+#9 exporting manifest list sha256:bf48506e3ad0454b6026376a75362df0928d87384239261733cb369217d244f1 done
+#9 naming to docker.io/ronakwani/prometheus:latest done
+#9 unpacking to docker.io/ronakwani/prometheus:latest done
+#9 DONE 0.0s
+
+View build details: docker-desktop://dashboard/build/desktop-linux/desktop-linux/yhbhibiru7c7jufrj2tlqsk5v

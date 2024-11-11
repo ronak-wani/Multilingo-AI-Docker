@@ -1,0 +1,41 @@
+#0 building with "desktop-linux" instance using docker driver
+
+#1 [internal] load build definition from Dockerfile2
+#1 transferring dockerfile: 155B done
+#1 DONE 0.0s
+
+#2 [auth] grafana/grafana:pull token for registry-1.docker.io
+#2 DONE 0.0s
+
+#3 [internal] load metadata for docker.io/grafana/grafana:latest
+#3 DONE 0.3s
+
+#4 [internal] load .dockerignore
+#4 transferring context: 302B done
+#4 DONE 0.0s
+
+#5 [internal] load build context
+#5 transferring context: 80.92kB done
+#5 DONE 0.0s
+
+#6 [1/3] FROM docker.io/grafana/grafana:latest@sha256:a0f881232a6fb71a0554a47d0fe2203b6888fe77f4cefb7ea62bed7eb54e13c3
+#6 resolve docker.io/grafana/grafana:latest@sha256:a0f881232a6fb71a0554a47d0fe2203b6888fe77f4cefb7ea62bed7eb54e13c3 0.0s done
+#6 DONE 0.0s
+
+#7 [2/3] WORKDIR /grafana
+#7 CACHED
+
+#8 [3/3] COPY . .
+#8 DONE 0.2s
+
+#9 exporting to image
+#9 exporting layers 0.0s done
+#9 exporting manifest sha256:81e8438a3d3c206416c3610d79d8f89d141ffccb25efd8db076b79a54ab7d482 done
+#9 exporting config sha256:8403a511abfa5f4bca27d036d57215d284061f7b646d07157297bb0a70921a00 done
+#9 exporting attestation manifest sha256:44946894580164351b0b94bcc1abcfd0c145fc705e64f15f42d62170f63a72c7 done
+#9 exporting manifest list sha256:edf09bfc3203e16d70ac38ac807b4c60fd9b04139688a81beccdb681c9faebaa done
+#9 naming to docker.io/ronakwani/grafana:latest done
+#9 unpacking to docker.io/ronakwani/grafana:latest done
+#9 DONE 0.0s
+
+View build details: docker-desktop://dashboard/build/desktop-linux/desktop-linux/7q440kcafbndwymf6juqbsyl2

@@ -1,4 +1,5 @@
 #!/bin/bash
+echo "Hello, Local Setup is working"
 nohup ollama serve &
 # Get the PID of the last command (ollama serve)
 OLLAMA_PID=$!
