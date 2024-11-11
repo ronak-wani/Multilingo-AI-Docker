@@ -49,6 +49,7 @@ request_duration = Summary('app_request_duration_seconds', 'Time spent processin
 h = Histogram('request_latency_seconds', 'Request latency')
 h.observe(4.7)
 
+start_http_server(8000)
 
 @app.get("/")
 async def root():
